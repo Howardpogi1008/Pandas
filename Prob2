@@ -1,0 +1,7 @@
+import pandas as pd
+
+df = pd.read_csv('cars.csv')
+Oddcol = df.iloc[:5,1:11:2]
+Row = df[df['Model'] == 'Mazda RX4']
+Cyl = df.ix[df['Model'] == 'Camaro Z28' , ['cyl']]
+det = df.ix[[1,28,18],['cyl','gear']]
